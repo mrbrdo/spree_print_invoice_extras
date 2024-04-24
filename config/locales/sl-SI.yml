@@ -1,0 +1,23 @@
+sl-SI:
+  spree:
+    show_only_orders_without_invoice: Prikaži le naročila brez Minimax računa
+    assign_minimax_invoice: Poveži s številko računa iz Minimaxa
+    minimax:
+      minimax: Minimax
+      invoice_id_or_url: URL Minimax računa ali ID računa
+      current_invoice_link: Trenutni račun
+      actions: Minimax račun
+    admin:
+      minimax:
+        invoice_action_error: Napaka pri shranjevanju Minimax računa
+      order:
+        events:
+          create_draft_minimax_invoice: Ustvari osnutek računa
+          create_blank_draft_minimax_invoice: Ustvari prazen osnutek računa
+          create_proforma_draft_minimax_invoice: Ustvari osnutek predračuna
+          resend_minimax_invoice: Ponovno pošlji račun
+          refresh_minimax_invoice: Osveži račun
+          unlink_minimax_invoice: Odstrani povezavo z računom
+          confirm_and_send_minimax_invoice: Potrdi in pošlji račun
+          send_minimax_invoice: Ustvari in pošlji račun
+          mark_minimax_invoice_finalized: Označi račun kot zaključen

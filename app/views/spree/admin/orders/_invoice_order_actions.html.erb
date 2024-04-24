@@ -1,0 +1,18 @@
+<% content_for :page_actions do %>
+  <% if can?(:fire, order) %>
+    <% order_manager = SpreePrintInvoiceExtras::OrderManager.new(order) %>
+    <% if order_manager.order_paid? %>
+      <% if order_manager.has_invoice? %>
+        <%=  button_link_to Spree.t(:resend_minimax_invoice, scope: 'admin.order.events'),
+              spree.admin_invoice_create_invoice_url(order.number, invoice_action: 'resend'),
+              method: :post,
+              icon: 'invoice.svg', style: 'background-color: black' %>
+      <% else %>
+        <%=  button_link_to Spree.t(:send_minimax_invoice, scope: 'admin.order.events'),
+              spree.admin_invoice_create_invoice_url(order.number, invoice_action: 'create_and_send'),
+              method: :post,
+              icon: 'invoice.svg', style: 'background-color: black' %>
+      <% end %>
+    <% end %>
+  <% end %>
+<% end %>

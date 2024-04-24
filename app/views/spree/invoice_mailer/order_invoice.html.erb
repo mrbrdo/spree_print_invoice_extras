@@ -1,0 +1,7 @@
+<p>Dear customer,<br><br>
+
+Thank you for your order no. <%= link_to @order_number, spree.order_url(@order_number, locale: I18n.locale) %>.<br><br>
+We are attaching the order invoice to this email. You can download and save it or print it.<br><br>
+
+Kind regards,<br>
+Your store team</p>

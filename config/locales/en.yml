@@ -1,0 +1,22 @@
+en:
+  spree:
+    show_only_orders_without_invoice: Show only orders without Minimax invoice
+    minimax:
+      minimax: Minimax
+      invoice_id_or_url: Invoice ID or URL
+      current_invoice_link: Current invoice
+      actions: Minimax Invoice
+    admin:
+      minimax:
+        invoice_action_error: Error saving Minimax invoice
+      order:
+        events:
+          create_draft_minimax_invoice: Create invoice draft
+          create_blank_draft_minimax_invoice: Create empty invoice draft
+          create_proforma_draft_minimax_invoice: Create proforma invoice draft
+          resend_minimax_invoice: Resend invoice
+          refresh_minimax_invoice: Refresh invoice
+          unlink_minimax_invoice: Unlink invoice
+          confirm_and_send_minimax_invoice: Confirm and send invoice
+          send_minimax_invoice: Create and send invoice
+          mark_minimax_invoice_finalized: Mark invoice as finalized
